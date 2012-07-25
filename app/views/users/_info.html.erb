@@ -1,0 +1,15 @@
+<span class=nav>
+	<div class=user_info>
+<li>CITY:</li>
+<li><%= @user.city %></li>
+<li>BIRTHDATE:</li>
+<li><%= @user.birthday %></li>
+<li>COUNTRY:</li>
+<li><%= @user.country %></li>
+<li>BIO:</li>
+<li><%= @user.bio %></li>
+<% if @user == current_user %>
+<%= link_to "Edit Profile", edit_user_path(current_user)%>
+<% end %>
+</div>
+</span>
